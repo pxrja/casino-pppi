@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1475ef5-2921-493c-af07-c3b465941133" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/technical/finance.py" beforeDir="false" afterPath="$PROJECT_DIR$/technical/finance.py" afterDir="false" />
-    </list>
+    <list default="true" id="e1475ef5-2921-493c-af07-c3b465941133" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="SharedIndexes">
