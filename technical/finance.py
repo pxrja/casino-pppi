@@ -24,9 +24,9 @@ class Finance:
         return "Сумма меньше минимальной"
 
     def calculate_commission(self, amount):
-        if amount < 1000:
-            return amount * 0.05  # 5% комиссия
-        elif amount < 5000:
-            return amount * 0.03  # 3% комиссия
-        else:
-            return amount * 0.02  # 2% комиссия
+        base_commission = amount * 0.01  # базовая 1%
+        if self.transactions_count > 10:
+            return base_commission * 0.5  # скидка 50%
+        if amount > 10000:
+            return 0  # без комиссии для крупных сумм
+        return base_commission
