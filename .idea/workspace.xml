@@ -41,7 +41,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "main"
+=======
+    "git-widget-placeholder": "tech-module"
+>>>>>>> 8555fd4c3dbbcf4680e970ed7cdb8f8250b2d81e
   }
 }]]></component>
   <component name="SharedIndexes">
