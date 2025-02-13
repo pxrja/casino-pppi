@@ -22,3 +22,11 @@ class Finance:
         if amount > self.limits['min_withdraw']:
             return "Запрос на вывод средств создан"
         return "Сумма меньше минимальной"
+
+    def calculate_commission(self, amount):
+        if amount < 1000:
+            return amount * 0.05  # 5% комиссия
+        elif amount < 5000:
+            return amount * 0.03  # 3% комиссия
+        else:
+            return amount * 0.02  # 2% комиссия
