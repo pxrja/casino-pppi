@@ -15,9 +15,10 @@ class Tournament:
         if len(self.players) >= self.min_players:
             self.status = 'active'
             return "Турнир начался! Рейтинговая игра"
-        return "Нужно минимум 4 игрока для рейтингового турнира"
+        return "Нужно минимум 30 игрока для рейтингового турнира"
 
     def calculate_rating(self, winner_id, loser_id):
         self.rating_points[winner_id] += 25
         self.rating_points[loser_id] -= 15
         return "Рейтинги обновлены"
+
