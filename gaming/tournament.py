@@ -14,3 +14,6 @@ class Tournament:
             self.status = 'active'
             return "Турнир начался"
         return "Недостаточно игроков"
+
+    def calculate_prize(self):
+        return self.prize_pool / len(self.players)
