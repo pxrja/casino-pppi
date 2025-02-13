@@ -5,20 +5,51 @@ class Tournament:
         self.status = 'pending'
         self.min_players = 30
         self.rating_points = {}
+        self.schedule = []
+        self.rules = {
+            'format': 'elimination',
+            'rounds': 3,
+            'time_limit': 60,
+            'buy_in': 100
+        }
+        self.leaderboard = {}
 
-    def register_player(self, player_id):
+    def create_schedule(self, start_date, end_date):
+        self.schedule.append({
+            'start': start_date,
+            'end': end_date,
+            'rounds': self.generate_rounds()
+        })
+        return "Расписание турнира создано"
+
+    def register_player(self, player_id, initial_rating=1000):
         self.players.append(player_id)
         self.rating_points[player_id] = initial_rating
-        return f"Игрок {player_id} зарегистрирован с рейтингом {initial_rating}"
+        self.leaderboard[player_id] = {
+            'wins': 0,
+            'losses': 0,
+            'points': 0
+        }
+        return f"Игрок {player_id} зарегистрирован"
+
+    def calculate_prize_distribution(self):
+        return {
+            '1st': self.prize_pool * 0.5,
+            '2nd': self.prize_pool * 0.3,
+            '3rd': self.prize_pool * 0.2
+        }
+
+    def update_leaderboard(self, player_id, result):
+        if result == 'win':
+            self.leaderboard[player_id]['wins'] += 1
+            self.leaderboard[player_id]['points'] += 3
+        return "Таблица лидеров обновлена"
+
+    def get_tournament_rules(self):
+        return self.rules
 
     def start_tournament(self):
         if len(self.players) >= self.min_players:
             self.status = 'active'
-            return "Турнир начался! Рейтинговая игра"
-        return "Нужно минимум 30 игрока для рейтингового турнира"
-
-    def calculate_rating(self, winner_id, loser_id):
-        self.rating_points[winner_id] += 25
-        self.rating_points[loser_id] -= 15
-        return "Рейтинги обновлены"
-
+            return "Турнир начался!"
+        return f"Нужно минимум {self.min_players} игроков"

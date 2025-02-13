@@ -31,7 +31,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  "associatedIndex": 1
 }</component>
   <component name="ProjectId" id="2syn038bT7Q5Dzzw3jTPA27u8fx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -39,13 +39,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
+  <component name="PropertiesComponent">{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Merging main"
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
