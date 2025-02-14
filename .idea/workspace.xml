@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1475ef5-2921-493c-af07-c3b465941133" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/casino-pppi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/casino-pppi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/baccarat.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/baccarat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/blackjack.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/blackjack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/poker.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/poker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/roulette.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/roulette.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaming/tournament.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaming/tournament.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/technical/finance.py" beforeDir="false" afterPath="$PROJECT_DIR$/technical/finance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/technical/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/technical/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +42,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.profile.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/projects/casino-pppi/docs",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\casino-pppi\docs" />
+      <recent name="D:\projects\casino-pppi\docs\html" />
+      <recent name="D:\projects\casino-pppi\archive" />
+      <recent name="D:\projects\casino-pppi\docs\pages" />
+      <recent name="D:\projects\casino-pppi\docs\pages\client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\casino-pppi\docs\pages" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="ENV_FILES" value="" />
