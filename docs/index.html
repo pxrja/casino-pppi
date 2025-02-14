@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #2c3e50;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                var(--secondary-color),
+                var(--secondary-color) 10px,
+                var(--primary-color) 10px,
+                var(--primary-color) 20px
+            );
+            animation: move-background 20s linear infinite;
+            opacity: 0.1;
+        }
+
+        @keyframes move-background {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(50%, 50%);
+            }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .navbar {
+            background: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: flex-end;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .navbar a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            color: var(--accent-color);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: var(--white);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section-header {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 1rem 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .section-content {
+            padding: 1.5rem;
+        }
+
+        .module-list {
+            list-style-type: none;
+        }
+
+        .module-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .module-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .module-title::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+
+        .feature-list {
+            padding-left: 1.5rem;
+        }
+
+        .feature-item {
+            margin-bottom: 0.25rem;
+            position: relative;
+        }
+
+        .feature-item::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: -1rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 1rem;
+            }
+
+            .section-header {
+                font-size: 1.1rem;
+            }
+
+            .module-title {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Casino</h1>
+            <p>Проект онлайн-казино с реализацией популярных азартных игр и передовых технологий</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="https://github.com/pxrja/casino-pppi" target="_blank">GITHUB</a>
+            <a href="docs/html/index.html">DOCS</a>
+            <a href="archive/chm.zip" download>CHM</a>
+        </div>
+    </nav>
+    
+<main class="content">
+        <section class="section">
+            <div class="section-header">О проекте</div>
+            <div class="section-content">
+                <p>Проект представляет собой онлайн-казино с реализацией популярных азартных игр: покер, рулетка, баккара и блэкджек. Система включает в себя передовые игровые модули, надежные финансовые операции, усиленную систему безопасности и турнирную систему.</p>
+            </div>
+        </section>
+        
+        <section class="section" id="modules">
+            <div class="section-header">Основные модули проекта</div>
+            <div class="section-content">
+                <ul class="module-list">
+                    <li class="module-item">
+                        <div class="module-title">🖥 Пользовательский интерфейс</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">📱 Адаптивный дизайн для всех устройств</li>
+                            <li class="feature-item">🌍 Мультиязычность</li>
+                            <li class="feature-item">🎨 Настраиваемые темы оформления</li>
+                            <li class="feature-item">🔍 Интуитивная навигация по играм</li>
+                            <li class="feature-item">🎥 HD-трансляции игровых столов</li>
+                            <li class="feature-item">💡 Интерактивные подсказки</li>
+                            <li class="feature-item">💰 Продвинутая панель управления ставками</li>
+                            <li class="feature-item">👥 Многопользовательские столы с чатом</li>
+                            <li class="feature-item">💬 Чат с живым дилером</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">👤 Профиль игрока</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">📝 Быстрая и безопасная регистрация</li>
+                            <li class="feature-item">⚙️ Расширенные пользовательские настройки</li>
+                            <li class="feature-item">📊 Детальная история активности</li>
+                            <li class="feature-item">🌟 Система VIP-статусов и привилегий</li>
+                            <li class="feature-item">🏆 Глобальные и локальные турнирные рейтинги</li>
+                            <li class="feature-item">📈 Персональная игровая статистика и аналитика</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🔐 Аутентификация и безопасность</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">✅ Многоуровневая верификация пользователей</li>
+                            <li class="feature-item">🔒 Усиленная двухфакторная аутентификация</li>
+                            <li class="feature-item">🔐 Передовое шифрование данных</li>
+                            <li class="feature-item">🛡️ Комплексная защита от DDoS-атак</li>
+                            <li class="feature-item">🕵️ Система обнаружения мошенничества</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">♠️ Покер (Poker)</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">🃏 Draw Poker («классический»)</li>
+                            <li class="feature-item">🤠 Texas Hold'em («техасский холдем»)</li>
+                            <li class="feature-item">🌾 Omaha Hold'em («омаха холдем»)</li>
+                            <li class="feature-item">🏅 Многоуровневая турнирная система</li>
+                            <li class="feature-item">🎭 Анонимные столы</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🎡 Рулетка (Roulette)</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">🇺🇸 American Roulette («американская»)</li>
+                            <li class="feature-item">🇪🇺 European Roulette («европейская»)</li>
+                            <li class="feature-item">🇫🇷 French Roulette («французская»)</li>
+                            <li class="feature-item">✅ Автоматическая проверка выигрышей</li>
+                            <li class="feature-item">📊 Статистика выпадений и горячие/холодные номера</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🎴 Баккара (Baccarat)</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">🚂 Chemin de fer («железная дорога»)</li>
+                            <li class="feature-item">🏦 Punto Banco («пунто-банко»)</li>
+                            <li class="feature-item">🌟 Baccarat Banque («банковский вариант»)</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🃏 Блэкджек (Blackjack)</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">🇺🇸 American Blackjack («американский»)</li>
+                            <li class="feature-item">🇪🇺 European Blackjack («европейский»)</li>
+                            <li class="feature-item">🛡️ Расширенная система страховок</li>
+                            <li class="feature-item">📘 Интерактивная базовая стратегия</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">💳 Система финансовых операций</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">💵 Мгновенный депозит</li>
+                            <li class="feature-item">💸 Быстрый и безопасный вывод средств</li>
+                            <li class="feature-item">🎁 Гибкая система бонусов и промо-акций</li>
+                            <li class="feature-item">💳 Поддержка множества платежных систем</li>
+                            <li class="feature-item">📜 Детальная история транзакций</li>
+                            <li class="feature-item">📉 Инструменты управления игровыми лимитами</li>
+                            <li class="feature-item">💱 Мультивалютные счета</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🏟️ Система турниров</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">📅 Интерактивное расписание турниров</li>
+                            <li class="feature-item">📝 Автоматическая регистрация участников</li>
+                            <li class="feature-item">🏆 Динамические призовые фонды</li>
+                            <li class="feature-item">📊 Турнирные таблицы в реальном времени</li>
+                            <li class="feature-item">📜 Настраиваемые турнирные правила</li>
+                            <li class="feature-item">🎟️ Сателлиты и квалификационные турниры</li>
+                            <li class="feature-item">🌐 Кросс-платформенные турниры</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🤖 Искусственный интеллект</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">🧠 Адаптивные AI-оппоненты</li>
+                            <li class="feature-item">📈 Предиктивная аналитика для игроков</li>
+                            <li class="feature-item">🛡️ AI-система обнаружения мошенничества</li>
+                            <li class="feature-item">💬 Чат-бот поддержки на основе AI</li>
+                            <li class="feature-item">🎯 Персонализированные рекомендации игр</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">📊 Аналитика и отчетность</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">📈 Расширенная бизнес-аналитика</li>
+                            <li class="feature-item">👥 Анализ поведения пользователей</li>
+                            <li class="feature-item">💹 Финансовая отчетность</li>
+                            <li class="feature-item">🔍 Мониторинг производительности системы</li>
+                            <li class="feature-item">📉 Анализ рисков</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🔧 Администрирование</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">⚙️ Панель управления казино</li>
+                            <li class="feature-item">👥 Управление пользователями</li>
+                            <li class="feature-item">💼 Управление играми и турнирами</li>
+                            <li class="feature-item">💰 Финансовое управление</li>
+                            <li class="feature-item">📊 Генерация отчетов</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🛠️ Техническая поддержка</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">💬 Круглосуточный чат поддержки</li>
+                            <li class="feature-item">📨 Система тикетов</li>
+                            <li class="feature-item">📚 Обширная база знаний</li>
+                            <li class="feature-item">❓ Интерактивный FAQ</li>
+                            <li class="feature-item">📞 Поддержка по телефону</li>
+                            <li class="feature-item">📧 Email-поддержка</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <div class="module-title">🔒 Ответственная игра</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">⏱️ Ограничения по времени игры</li>
+                            <li class="feature-item">💰 Лимиты на депозиты</li>
+                            <li class="feature-item">🚫 Самоисключение</li>
+                            <li class="feature-item">📋 Самооценка игрока</li>
+                            <li class="feature-item">ℹ️ Информация о рисках и зависимости</li>
+                            <li class="feature-item">🤝 Партнерство с организациями по борьбе с игровой зависимостью</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
