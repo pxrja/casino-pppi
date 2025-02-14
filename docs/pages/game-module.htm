@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Игровые модули</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .module {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #A8E4A0;
+        }
+        
+        .module-block {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #A8E4A0;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .module-block:hover {
+            background: #e8f4f8;
+            transform: translateX(5px);
+        }
+        
+        .description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .module-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="module">
+        <h1>Игровые модули</h1>
+
+        <a href="pages/gaming/baccarat.htm" class="module-link">
+            <div class="module-block">
+                <h3>Баккара</h3>
+                <p class="description">Реализация игры в Баккара с поддержкой вариантов Punto Banco и Chemin de Fer.</p>
+            </div>
+        </a>
+
+        <a href="pages/gaming/blackjack.htm" class="module-link">
+            <div class="module-block">
+                <h3>Блэкджек</h3>
+                <p class="description">Американский и европейский варианты Блэкджека с различными правилами.</p>
+            </div>
+        </a>
+
+        <a href="pages/gaming/poker.htm" class="module-link">
+            <div class="module-block">
+                <h3>Покер</h3>
+                <p class="description">Texas Holdem, Draw Poker и Omaha с поддержкой кэш-игр и турниров.</p>
+            </div>
+        </a>
+
+        <a href="pages/gaming/roulette.htm" class="module-link">
+            <div class="module-block">
+                <h3>Рулетка</h3>
+                <p class="description">Европейская, американская и французская рулетка с различными типами ставок.</p>
+            </div>
+        </a>
+
+        <a href="pages/gaming/tournament.htm" class="module-link">
+            <div class="module-block">
+                <h3>Турнирная система</h3>
+                <p class="description">Управление турнирами, регистрация игроков и распределение призового фонда.</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

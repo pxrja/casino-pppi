@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Технические модули</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .module {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FFD700;
+        }
+        
+        .module-block {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #FFD700;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .module-block:hover {
+            background: #e8f4f8;
+            transform: translateX(5px);
+        }
+        
+        .description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .module-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="module">
+        <h1>Технические модули</h1>
+
+        <a href="pages/technical/finance.htm" class="module-link">
+            <div class="module-block">
+                <h3>Финансовый модуль</h3>
+                <p class="description">Управление финансовыми операциями, платежными системами, депозитами и выводами средств. Включает бонусную систему и историю транзакций.</p>
+            </div>
+        </a>
+
+        <a href="pages/technical/security.htm" class="module-link">
+            <div class="module-block">
+                <h3>Модуль безопасности</h3>
+                <p class="description">Система безопасности с верификацией пользователей, двухфакторной аутентификацией, шифрованием данных и защитой от DDoS-атак.</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
