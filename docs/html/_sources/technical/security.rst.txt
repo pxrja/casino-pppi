@@ -1,0 +1,7 @@
+Модуль Security
+=============
+
+.. automodule:: technical.security
+   :members:
+   :undoc-members:
+   :show-inheritance:

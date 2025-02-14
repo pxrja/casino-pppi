@@ -1,0 +1,7 @@
+Модуль Support
+=============
+
+.. automodule:: client.support
+   :members:
+   :undoc-members:
+   :show-inheritance:

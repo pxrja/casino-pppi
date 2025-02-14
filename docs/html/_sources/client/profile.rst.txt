@@ -1,0 +1,7 @@
+Модуль Profile
+=============
+
+.. automodule:: client.profile
+   :members:
+   :undoc-members:
+   :show-inheritance:

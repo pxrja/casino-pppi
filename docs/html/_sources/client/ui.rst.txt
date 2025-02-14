@@ -1,0 +1,7 @@
+Модуль UI
+=========
+
+.. automodule:: client.ui
+   :members:
+   :undoc-members:
+   :show-inheritance:

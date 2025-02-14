@@ -1,0 +1,7 @@
+Модуль Baccarat
+==============
+
+.. automodule:: gaming.baccarat
+   :members:
+   :undoc-members:
+   :show-inheritance:

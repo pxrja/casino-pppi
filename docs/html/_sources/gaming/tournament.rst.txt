@@ -1,0 +1,7 @@
+Модуль Tournament
+===============
+
+.. automodule:: gaming.tournament
+   :members:
+   :undoc-members:
+   :show-inheritance:

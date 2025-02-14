@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Модуль Blackjack &#8212; документация Casino 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=9ca2116e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=5b699b7f"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="Модуль Poker" href="poker.html" />
+    <link rel="prev" title="Модуль Baccarat" href="baccarat.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="blackjack">
+<h1>Модуль Blackjack<a class="headerlink" href="#blackjack" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="py class" id="module-gaming.blackjack">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gaming.blackjack.</span></span><span class="sig-name descname"><span class="pre">Blackjack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'American'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для реализации игры в Блэкджек с поддержкой разных вариантов.</p>
+<p>Поддерживает американский и европейский варианты игры,
+включая различные правила раздачи карт и страховку.</p>
+<dl class="simple">
+<dt>Methods:</dt><dd><p>hit(): Добор дополнительной карты игроком
+stand(): Завершение хода игрока
+deal_initial_cards(): Начальная раздача карт
+deal_american(): Раздача по американским правилам
+deal_european(): Раздача по европейским правилам
+offer_insurance(): Предложение страховки
+check_blackjack(): Проверка на блэкджек</p>
+</dd>
+<dt>Attributes:</dt><dd><p>game_type (str): Вариант игры (American/European)
+player_hand (list): Карты игрока
+dealer_hand (list): Карты дилера
+deck (list): Игровая колода
+insurance (bool): Статус страховки
+bet_amount (float): Размер ставки
+insurance_amount (float): Размер страховки</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.check_blackjack">
+<span class="sig-name descname"><span class="pre">check_blackjack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.check_blackjack" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Проверка комбинации на блэкджек.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>bool: True если сумма карт равна 21</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.deal_american">
+<span class="sig-name descname"><span class="pre">deal_american</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.deal_american" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Раздача карт по американским правилам.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Сообщение о раздаче карт</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.deal_european">
+<span class="sig-name descname"><span class="pre">deal_european</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.deal_european" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Раздача карт по европейским правилам.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Сообщение о раздаче карт</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.deal_initial_cards">
+<span class="sig-name descname"><span class="pre">deal_initial_cards</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.deal_initial_cards" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Начальная раздача карт в зависимости от варианта игры.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Сообщение о результате раздачи</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.hit">
+<span class="sig-name descname"><span class="pre">hit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.hit" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добор дополнительной карты игроком.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Сообщение о выдаче карты</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.offer_insurance">
+<span class="sig-name descname"><span class="pre">offer_insurance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.offer_insurance" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Предложение страховки при тузе у дилера.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Сообщение о доступности страховки</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gaming.blackjack.Blackjack.stand">
+<span class="sig-name descname"><span class="pre">stand</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gaming.blackjack.Blackjack.stand" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Завершение хода игрока.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Сообщение о завершении хода</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Casino</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">Модули проекта</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../client/profile.html">Модуль Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../client/support.html">Модуль Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../client/ui.html">Модуль UI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="baccarat.html">Модуль Baccarat</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Модуль Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poker.html">Модуль Poker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roulette.html">Модуль Roulette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tournament.html">Модуль Tournament</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../technical/finance.html">Модуль Finance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../technical/security.html">Модуль Security</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../modules.html">Модули проекта</a><ul>
+      <li>Previous: <a href="baccarat.html" title="предыдущая глава">Модуль Baccarat</a></li>
+      <li>Next: <a href="poker.html" title="следующая глава">Модуль Poker</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, A. Shyrobokov.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/gaming/blackjack.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

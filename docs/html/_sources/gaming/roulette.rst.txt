@@ -1,0 +1,7 @@
+Модуль Roulette
+==============
+
+.. automodule:: gaming.roulette
+   :members:
+   :undoc-members:
+   :show-inheritance:

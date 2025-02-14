@@ -1,0 +1,7 @@
+Модуль Finance
+============
+
+.. automodule:: technical.finance
+   :members:
+   :undoc-members:
+   :show-inheritance:

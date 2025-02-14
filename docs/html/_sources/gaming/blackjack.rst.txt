@@ -1,0 +1,7 @@
+Модуль Blackjack
+===============
+
+.. automodule:: gaming.blackjack
+   :members:
+   :undoc-members:
+   :show-inheritance:

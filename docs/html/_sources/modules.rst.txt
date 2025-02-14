@@ -1,0 +1,27 @@
+Модули проекта
+=============
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Клиентские модули
+
+   client/profile
+   client/support
+   client/ui
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Игровые модули
+
+   gaming/baccarat
+   gaming/blackjack
+   gaming/poker
+   gaming/roulette
+   gaming/tournament
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Технические модули
+
+   technical/finance
+   technical/security

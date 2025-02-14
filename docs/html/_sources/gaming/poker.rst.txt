@@ -1,0 +1,7 @@
+Модуль Poker
+===========
+
+.. automodule:: gaming.poker
+   :members:
+   :undoc-members:
+   :show-inheritance:
